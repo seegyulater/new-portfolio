@@ -14,6 +14,7 @@ This repository is a responsive portfolio Website using ReactJS
 * **React** – Component-based UI development
 * **Vite** – Lightning-fast build tool
 * **TailwindCSS** – Utility-first CSS for styling
+* **Reactbits** -  UI Components for React
 * **Lucide Icons** – Clean and beautiful icon pack
 * **Radix UI** – Accessible component primitives
 * **TypeScript (optional)** – Type safety and tooling
@@ -60,7 +61,7 @@ This repository is a responsive portfolio Website using ReactJS
 
 ```bash
 git clone https://github.com/seegyulater/new-portfolio
-cd markcy-portfolio
+cd newcy-portfolio
 npm install
 npm run dev
 ```

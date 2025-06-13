@@ -15,8 +15,7 @@ This repository is a responsive portfolio Website using ReactJS
 * **Vite** – Lightning-fast build tool
 * **TailwindCSS** – Utility-first CSS for styling
 * **React Bits** -  UI Components for React
-* **Lucide Icons** – Clean and beautiful icon pack
-* **Radix UI** – Accessible component primitives
+* **EmailJS** - framework uses for emailing between users and client
 * **TypeScript (optional)** – Type safety and tooling
 * **GitHub & Vercel** – Deployment
 

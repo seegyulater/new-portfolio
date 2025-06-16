@@ -23,9 +23,6 @@ This repository is a responsive portfolio Website using ReactJS
 
 ## ⚡️ Features
 
-* 🌑 **Light/Dark Mode Toggle**
-  Save theme preference in local storage with beautiful transitions
-
 * 💫 **Animated Backgrounds**
   Stars, meteors, scroll effects, and glowing UI elements
 

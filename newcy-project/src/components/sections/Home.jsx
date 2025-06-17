@@ -11,8 +11,7 @@ export const Home = () => {
 
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
           Full Stack Developer and Computer Science graduate student from
-          Pamantasan ng Lungsod ng Maynila, experienced in developing responsive
-          web and system applications, with a background in leadership.
+          Pamantasan ng Lungsod ng Maynila
         </p>
 
         <div className="flex justify-center space-x-4">

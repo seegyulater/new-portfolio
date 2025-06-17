@@ -6,6 +6,8 @@ import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
+import SplashCursor from "./components/SplashCursor";
+import { RevealOnScroll } from "./components/RevealOnScroll";
 import "./index.css";
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <SplashCursor />
+        <RevealOnScroll />
       </div>
     </>
   );

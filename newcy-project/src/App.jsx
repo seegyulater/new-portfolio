@@ -8,6 +8,7 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import SplashCursor from "./components/SplashCursor";
 import { RevealOnScroll } from "./components/RevealOnScroll";
+import { Contact } from "./components/sections/Contact";
 import "./index.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Projects />
         <SplashCursor />
         <RevealOnScroll />
+        <Contact />
       </div>
     </>
   );

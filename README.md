@@ -17,7 +17,7 @@ This repository is a responsive portfolio Website using ReactJS
 * **React Bits** -  UI Components for React
 * **EmailJS** - framework uses for emailing between users and client
 * **TypeScript (optional)** – Type safety and tooling
-* **GitHub & Vercel** – Deployment
+* **GitHub & Netlify** – Deployment
 
 ---
 

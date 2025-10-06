@@ -1,8 +1,57 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { TimelineSection } from "../TimelineItem";
+import CV from "../../assets/PETRAS_CV2025.pdf";
+import { motion } from "framer-motion";
 
 export const About = () => {
-  const frontendSkills = ["React", "Vue", "Typescript", "TailwindCSS"];
-  const backendSkills = ["Node.js", "Python", "PHP", "MySQL"];
+  const skillSections = [
+    {
+      title: "Software Skills",
+      items: [
+        "Leadership",
+        "Teamwork",
+        "Time Management",
+        "Problem Solving",
+        "Communication",
+        "Analytical Thinking",
+      ],
+    },
+    {
+      title: "Technical Skills",
+      items: [
+        "Java",
+        "Python",
+        "PHP",
+        "Javascript",
+        "HTML5/CSS3",
+        "Laravel",
+        "Dart",
+        "Flutter",
+        "React/ReactJS",
+        "C/C++",
+      ],
+    },
+    {
+      title: "Backend Skills",
+      items: ["MySQL", "MariaDB", "Node.js", "Django", "Flask"],
+    },
+    {
+      title: "Tools & Platforms",
+      items: [
+        "Git/Github",
+        "Microsoft Office",
+        "Figma",
+        "Gemini Developer API",
+        "Chart.js",
+        "Visual Studio Code",
+        "Excel",
+        "FlutterFlow",
+        "React bits",
+        "Filament",
+      ],
+    },
+  ];
+
   return (
     <section
       id="about"
@@ -11,98 +60,75 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent text-center">
-            {" "}
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions. With a background
-              in leadership.
+          <motion.div
+            className="rounded-xl p-8 border border-white/10 bg-white/5 backdrop-blur-sm hover:-translate-y-1 transition-all mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="text-pink-400 text-lg font-semibold mb-4">
+              Hi, I'm Mark 👋
+            </h3>
+            <p className="text-gray-300 text-base leading-relaxed">
+              I’m a passionate developer who enjoys building fast, scalable, and
+              user-centric web applications. I love transforming ideas into
+              elegant, functional interfaces — whether it's front-end design or
+              backend logic. With a foundation in leadership and collaboration,
+              I thrive in dynamic teams and take pride in solving real-world
+              problems with code.
             </p>
+          </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Frontend </h3>
-                <div className="flex flex-wrap grap-2">
-                  {frontendSkills.map((tech, key) => (
+          {/* Skills Timeline Style */}
+          <div className="relative border-l border-white/10 ml-4 space-y-12">
+            {skillSections.map((section, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="relative pl-6"
+              >
+                <span className="absolute left-[-11px] top-1 w-4 h-4 bg-pink-500 rounded-full border-4 border-gray-900" />
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  {section.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {section.items.map((item, i) => (
                     <span
-                      key={key}
-                      className="bg-pink-500/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-pink-500/20
-                               hover:shadow-[0_2px_8px_rgba(245, 40, 145, 0.2)] transition
-                   "
+                      key={i}
+                      className="bg-pink-500/10 text-pink-400 py-1 px-3 rounded-full text-sm hover:bg-pink-500/20 transition-all"
                     >
-                      {tech}
+                      {item}
                     </span>
                   ))}
                 </div>
-              </div>
-
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Backend </h3>
-                <div className="flex flex-wrap grap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-pink-500/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-pink-500/20
-                               hover:shadow-[0_2px_8px_rgba(245, 40, 145, 0.2)] transition
-                   "
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+              </motion.div>
+            ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y ">
-                <li>
-                  <strong> Bachelor of Science in Computer Science</strong> -
-                  Pamantasan ng Lungsod ng Maynila (2021-2025)
-                </li>
-                <li>
-                  <strong> Relevant Coursework: </strong> Data Structures, Web
-                  Development, Cloud Computing, Mobile Development...
-                </li>
-              </ul>
-            </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">💻 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Data Management Intern at Pinnacle Inc. (March 2025 -
-                    Present){" "}
-                  </h4>
-                  <p>
-                    Conducted User Revalidation and User Acceptance Testing
-                    (UAT) for the Pamantasan ng Lungsod ng Maynila (PLM) ERP
-                    System, ensuring proper user access levels and validating
-                    system functionality across multiple modules
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    ICTO Intern at Pamantasan ng Lungsod ng Maynila. (July 2024
-                    - Aug 2024){" "}
-                  </h4>
-                  <p>
-                    Designed and implemented a document request and status
-                    tracking system for the PLM Office of the University
-                    Registrar (OUR) using PHP, MySQL, Laravel, and Filament.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 pt-10">
+            <a
+              href="#contact"
+              className="px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white text-sm font-medium hover:scale-105 transition text-center"
+            >
+              Get In Touch
+            </a>
+            <a
+              href={CV}
+              download
+              className="px-6 py-2 rounded-full border border-pink-500/50 text-white hover:bg-white/10 text-sm font-medium transition text-center"
+            >
+              Download CV
+            </a>
           </div>
         </div>
+
+        {/* Existing Timeline Section */}
+        <TimelineSection />
       </RevealOnScroll>
     </section>
   );

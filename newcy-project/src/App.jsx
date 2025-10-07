@@ -9,7 +9,7 @@ import { Projects } from "./components/sections/Projects";
 import SplashCursor from "./components/SplashCursor";
 import { RevealOnScroll } from "./components/RevealOnScroll";
 import { Contact } from "./components/sections/Contact";
-import Galaxy from "./components/Galaxy";
+import LightRays from "./components/LightRays";
 import "./index.css";
 
 function App() {
@@ -21,13 +21,17 @@ function App() {
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0">
-          <Galaxy
-            mouseRepulsion={true}
-            mouseInteraction={true}
-            density={1.5}
-            glowIntensity={0.5}
-            saturation={0.8}
-            hueShift={240}
+          <LightRays
+            raysOrigin="top-center"
+            raysColor="#EFA3F0"
+            raysSpeed={1.5}
+            lightSpread={0.8}
+            rayLength={1.2}
+            followMouse={true}
+            mouseInfluence={0.1}
+            noiseAmount={0.1}
+            distortion={0.05}
+            className="custom-rays"
           />
         </div>
       </div>

@@ -70,9 +70,9 @@ export const About = () => {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-pink-400 text-lg font-semibold mb-4">
-              Hi, I'm Mark 👋
+              Hi, I'm Markcy Petras 👋
             </h3>
-            <p className="text-gray-300 text-base leading-relaxed">
+            <p className="text-gray-300 text-lg leading-relaxed">
               I’m a passionate developer who enjoys building fast, scalable, and
               user-centric web applications. I love transforming ideas into
               elegant, functional interfaces — whether it's front-end design or

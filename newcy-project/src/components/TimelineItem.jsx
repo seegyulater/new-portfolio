@@ -43,7 +43,7 @@ export const TimelineSection = () => {
           <TimelineItem
             title="Bachelor of Science in Computer Science"
             subtitle="Pamantasan ng Lungsod ng Maynila | 2021 - 2025"
-            description="Focused on full-stack development, databases, and algorithms."
+            description="Focused on full-stack development, databases, and algorithms. General Point Average is 3.59"
             delay={0.1}
           />
         </div>
@@ -56,13 +56,13 @@ export const TimelineSection = () => {
           <TimelineItem
             title="Data Management Intern"
             subtitle="Pinnacle Inc. | Mar 2025 - June 2025"
-            description="Assisted with UAT & user revalidation for the PLM ERP System."
+            description="Conducted User Acceptance Testing (UAT) and User Revalidation for PLM’s ERP system."
             delay={0.2}
           />
           <TimelineItem
             title="ICTO Intern"
             subtitle="Pamantasan ng Lungsod ng Maynila | Jul - Aug 2024"
-            description="Developed a Laravel + Filament system for document tracking."
+            description="Designed and implemented a document request and tracking system using Laravel and Filament, improving internal request efficiency."
             delay={0.3}
           />
         </div>

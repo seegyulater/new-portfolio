@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
-import { Projects } from "./components/sections/Projects";
+import { ProjectsSection } from "./components/sections/ProjectsSection";
 import SplashCursor from "./components/SplashCursor";
 import { RevealOnScroll } from "./components/RevealOnScroll";
 import { Contact } from "./components/sections/Contact";
@@ -44,7 +44,7 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
-        <Projects />
+        <ProjectsSection />
         <SplashCursor />
         <RevealOnScroll />
         <Contact />
